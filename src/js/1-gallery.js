@@ -1,8 +1,8 @@
-// Імпортуємо бібліотеку та стилі
+
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-// Дані зображень
+
 const images = [
   {
     preview:
@@ -69,7 +69,6 @@ const images = [
   },
 ];
 
-// Створення розмітки галереї
 const galleryContainer = document.querySelector('.gallery');
 
 const galleryMarkup = images
@@ -89,7 +88,6 @@ const galleryMarkup = images
 
 galleryContainer.innerHTML = galleryMarkup;
 
-// Ініціалізація бібліотеки SimpleLightbox
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionPosition: 'bottom',
